@@ -1,0 +1,94 @@
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #34495e;
+}
+/* Style for the edit product container */
+.editproduct {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    width: 70%;
+    max-width: 600px; /* Limit width */
+    margin: 2rem auto; /* Centered with top margin */
+    padding: 2rem; /* Padding around the content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #fff; /* White background for the container */
+}
+
+/* Heading style */
+.editproduct h1 {
+    font-size: 2rem; /* Font size for heading */
+    color: var(--dark-color); /* Use a dark color defined in variables */
+    margin-bottom: 1rem; /* Space below heading */
+    text-align: center; /* Center the heading text */
+}
+
+/* Label styles */
+.editproduct label {
+    display: block; /* Block display for labels */
+    margin-bottom: 0.5rem; /* Space below each label */
+    font-weight: bold; /* Bold text for labels */
+}
+
+/* Input and textarea styles */
+.editproduct input[type="text"],
+.editproduct input[type="number"],
+.editproduct textarea {
+    width: 100%; /* Full width */
+    padding: 0.5rem; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Slightly rounded corners */
+    margin-bottom: 1rem; /* Space below inputs */
+    font-size: 1rem; /* Font size for inputs */
+}
+
+/* Textarea specific styles */
+.editproduct textarea {
+    height: 100px; /* Height for the textarea */
+}
+
+/* Submit button styles */
+.editproduct input[type="submit"] {
+    background-color: var(--accent-color); /* Accent color for the button */
+    color: #fff; /* White text color */
+    padding: 0.7rem 1.5rem; /* Padding inside the button */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Font size for the button */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Button hover effect */
+.editproduct input[type="submit"]:hover {
+    background-color: darken(var(--accent-color), 10%); /* Darken the button on hover */
+}

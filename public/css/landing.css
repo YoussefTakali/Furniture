@@ -1,0 +1,424 @@
+*{
+    scroll-behavior: smooth;
+}
+
+#hero{
+    height: 130vh!important;
+}
+
+#about{
+    height: 85vh!important;
+    background: linear-gradient(to left, #e5d8af 25%, white 25%); /* Gradient background with 30% color */
+}
+#contact{
+    height: 70vh;
+    background-color: #e5d8af;
+    padding: 5px;
+    z-index: 5000;
+}
+#profile{
+    position: absolute;
+    top: 0%;
+    width: 50px!important;
+    height: auto;
+    border-radius: 50%;
+    left: 100%;
+}
+.round-button {
+    display: inline-block;
+    padding: 15px;
+    background-color: #e5d8af; /* Button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 50%; /* Makes the button circular */
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    width: 30px;  /* Width and height to make it perfectly round */
+    height: 30px;
+    line-height: 30px; /* Align icon vertically */
+}
+
+.round-button:hover {
+    background-color: #b8a678; /* Slightly darker shade for hover */
+}
+
+.admin-icon {
+    font-size: 24px; /* Size of the icon */
+    display: block; /* Makes the icon centered */
+    margin: 0 auto; /* Centers the icon */
+}
+
+/* Optional text beside the button */
+.round-button span {
+    margin-left: 10px; /* Space between icon and text */
+    vertical-align: middle; /* Aligns text with the icon */
+}
+#ad{
+    position: absolute;
+    left: -20%;
+    top:5%;
+}
+footer {
+    background-color: #afc5e5; /* Dark background */
+    height: 30vh;
+padding-bottom: 80px;    text-align: center; /* Center the text */
+}
+
+.footer-grid {
+    height: 30vh;
+    display: grid; /* Enable grid layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px; /* Space between columns */
+}
+
+.footer-content,
+.social-media,
+.map {
+    padding: 15px; /* Padding inside each column */
+    border-radius: 8px; /* Rounded corners */
+}
+#item-gallery {
+    background-color: #e5d8af;
+    height: 55vh;
+    padding: 20px; /* Add some padding around the section */
+}
+#item-gallery h2 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center; /* Center align the heading */
+    margin-bottom: 20px; /* Add space below the heading */
+    font-size: 24px; /* Set the font size */
+    color: #333; /* Set the text color */
+}
+#item-gallery p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+.item-box {
+    text-align: center; /* Center text and images */
+    overflow: hidden; /* Ensure the shadow doesn't overflow */
+}
+
+.item-box img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scaling and shadow */
+}
+
+.item-box:hover img {
+    transform: scale(1.1); /* Scale up the image slightly */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+}
+.item-grid {
+    position: relative;
+    top: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+    gap: 20px; /* Space between grid items */
+}
+
+.item-box {
+    text-align: center; /* Center text and images */
+}
+
+.item-box img {
+    width: 80%; /* Make images responsive */
+    height: 40%; /* Maintain aspect ratio */
+}
+
+.footer-links {
+    position: relative;
+    top: 5%;
+    list-style-type: none; /* Remove bullet points from the list */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove default margin */
+}
+
+.footer-links li {
+    margin-bottom: 10px; /* Add space below each list item */}
+
+.footer-links a {
+    font-family: 'Courier New', Courier, monospace ;
+    text-decoration: none; /* Remove underline */
+}
+
+.footer-links a:hover {
+    color: #fff; /* White link color */
+    text-decoration: none; /* Remove underline */}
+
+.social-media img {
+    width: 24px; /* Set icon size */
+    height: 24px; /* Set icon size */
+    margin: 0 10px; /* Space between icons */
+}
+.social-media {
+    margin-top: 15px; /* Add space above the social media section */
+}
+
+.social-media a {
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    display: block; /* Make each link a block element to take the full width */
+    margin: 10px 0; /* Add vertical space (10 pixels) above and below each social media icon */
+    text-decoration: none;
+}
+
+.social-media img {
+    width: 24px; /* Set icon size */
+    height: 24px; /* Set icon size */
+}
+#links{
+    position: relative;
+    top: 6%;
+}
+h4{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+h1{
+    font-family: 'Lato', sans-serif;
+        position: absolute;
+top: 15%;
+left: 8%;
+font-size: 70px;
+}
+span{
+    font-family: 'Montserrat', sans-serif;
+}
+h6{
+    position: absolute;
+    top: 55%;
+    left :8%;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: grey;
+}
+span{
+    color:#e5d8af;
+}
+#hero{
+    height: 90vh;
+}
+#im1{
+    position: absolute; 
+    right: 5%;
+    top: 10%;
+    height: 80%;
+    width: auto;
+}
+#im2{
+    position: absolute;
+    width: 40%;
+    height: auto;
+    opacity: 0.5;
+    right: 8%;
+    top: 15%;
+}
+#im3{
+    position: absolute; 
+    left: 8%;
+    top: 85%;
+    height: 35%;
+    width: 35%;
+    border-radius: 20px;
+}
+#firstp{
+    position: absolute;
+    top: 90%;
+    right: 45%;
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+}
+#p2{
+    position: absolute;
+    top: 95%;
+    right: 10%;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+#s1{
+color: grey;
+font-size: 20px;
+}
+#logo{
+    font-size: 30px;
+    position: absolute;
+    left: 8%;
+    font-family: 'Courier New', Courier, monospace;
+}
+nav {
+    position: absolute;
+    left: 35%;
+    top: 5%;
+}
+
+.navbar-menu {
+    list-style-type: none; /* Remove default list styling */
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: center; /* Center the items horizontally */
+}
+
+.navbar-menu li {
+    margin: 0 30px; /* Increase space between items */
+}
+
+.navbar-menu a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Text color */
+    font-weight: bold; /* Make text bold */
+    transition: color 0.3s; /* Smooth color transition */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar-menu a:hover {
+    color: #e5d8af; /* Change color on hover */
+}
+.navbar-menu .login {
+    position: relative;
+    margin-top: -2%;
+    margin-left: 30%; /* Additional space for Login */
+    background-color: #e5d8af;
+    padding: 10px;
+    border-radius: 20px;
+}
+.navbar-menu .login a:hover {
+color :white;
+}
+h2{
+position: relative;
+text-align: center;
+font-size: 40px;
+color: #e5d8af;
+}
+#im4{
+    position: relative;
+    top: 15%;
+    left: 55%;
+    width: 40%;
+    height: auto;
+}
+iframe{
+    position: relative;
+    top: 5%;
+}
+#map{
+    height: 50vh;
+}
+#aboutp{
+position: relative;
+top: 100%;
+    font-size: 30px;
+font-family: 'Lato', sans-serif;
+text-align: center;}
+#ab{
+    position: relative;
+    width: 50%;
+    top: -55%;
+    left: 5%;
+    align-items: center;
+}
+.grid-section {
+    position: relative;
+    left: 8%;
+    display: grid; /* Use CSS Grid */
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 30px; /* Space between grid items */
+    width: 84%;
+}
+
+.grid-item {
+    height: 100vh;
+}
+h3{
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    left: 8%;
+    top: 3%;
+}
+#im5{
+    position: relative;
+    top: 5%;
+    width: 90%;
+    height: 66%;
+}
+#im6{
+    position: relative;
+    top: 5%;
+    width: 100%;
+    height: 38%;
+}
+#im7{
+    position: relative;
+    top: 5%;
+    width: 100%;
+    height: 38%;
+}
+#im8{
+    position: relative;
+    top: 5%;
+    width: 100%;
+    height: 84%;
+}
+#g1{
+    position: relative;
+    top: 5%;
+}
+
+.contact-form {
+    position: relative;
+    right: 25%;
+    bottom: 10%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Form heading */
+.contact-form h2 {
+    position: relative;
+    top: -5%;
+    text-align: left;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    ;
+}
+
+/* Label styling */
+.contact-form label {
+    font-weight: bold;
+    color: #555;
+    display: block;
+}
+
+/* Input field styling */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/* Styling for the submit button */
+.contact-form input[type="submit"] {
+    background-color: #e5d8af;
+    color: #333;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #d0c197;
+}

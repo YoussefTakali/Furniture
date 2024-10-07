@@ -1,0 +1,100 @@
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #34495e;
+}
+/* Add User container styling */
+.adduser {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    width: 70%;
+    max-width: 500px; /* Limit the width of the container */
+    margin: 20px auto; /* Center the container with margin */
+    padding: 20px; /* Add padding inside the container */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Heading styling */
+.adduser h1 {
+    text-align: center; /* Center the heading */
+    color: #333; /* Dark text color */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+/* Form styling */
+.adduser form {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+}
+
+/* Label styling */
+.adduser label {
+    margin-bottom: 5px; /* Space below labels */
+    font-weight: bold; /* Bold text for labels */
+}
+
+/* Input field styling */
+.adduser input[type="text"],
+.adduser input[type="email"],
+.adduser input[type="password"],
+.adduser select {
+    padding: 10px; /* Padding inside input fields */
+    margin-bottom: 15px; /* Space below input fields */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+}
+
+/* Input focus styling */
+.adduser input[type="text"]:focus,
+.adduser input[type="email"]:focus,
+.adduser input[type="password"]:focus,
+.adduser select:focus {
+    border-color: #007BFF; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Submit button styling */
+.adduser input[type="submit"] {
+    background-color: #007BFF; /* Primary button color */
+    color: white; /* Text color */
+    padding: 10px 15px; /* Button padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.adduser input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

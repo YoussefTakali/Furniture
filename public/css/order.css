@@ -1,0 +1,92 @@
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #34495e;
+}
+.orders{
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    width: 70%;
+}
+.orders table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Remove space between cells */
+}
+
+.orders th, .orders td {
+    padding: 12px; /* Padding for table cells */
+    text-align: left; /* Align text to the left */
+}
+
+.orders th {
+    background-color: #e5d8af; /* Header background color */
+    color: #333; /* Header text color */
+}
+
+.orders tr:nth-child(even) {
+    background-color: #f2f2f2; /* Zebra striping for even rows */
+}
+
+.orders tr:hover {
+    background-color: #e5d8af; /* Highlight row on hover */
+}
+
+/* Button styling */
+.orders .btn {
+    padding: 5px 10px; /* Button padding */
+    background-color: #007BFF; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.orders .btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Action button styling */
+.orders .action-btn {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color */
+    background-color: #dc3545; /* Red background for delete */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.orders .action-btn:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+.orders .delete-btn {
+    margin-left: 10px; /* Space between update and delete buttons */
+}

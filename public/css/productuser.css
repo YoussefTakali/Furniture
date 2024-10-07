@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+/*-- VARIABLES CSS--*/
+/*Colores*/
+:root{
+    --first-color: #E3F8FF;
+    --second-color: #DCFAFB;
+    --third-color: #FFE8DF;
+    --accent-color: #FF5151;
+    --dark-color: #161616;
+}
+span{
+    color:#e5d8af;
+}
+
+.view-cart-button {
+    position: fixed;
+    top: 10%; /* Distance from the top */
+    right: 5%; /* Distance from the right */
+    background-color: #e5d8af; /* Background color */
+    color: #333; /* Text color */
+    border: none;
+    border-radius: 50%; /* Circular shape */
+    width: 60px; /* Width of the button */
+    height: 60px; /* Height of the button */
+    display: flex; /* Center contents */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Transition for hover effects */
+}
+#logo{
+    font-size: 30px;
+    position: absolute;
+    left: 8%;
+    font-family: 'Courier New', Courier, monospace;
+}
+nav {
+    position: absolute;
+    left: 35%;
+    top: 5%;
+}
+
+.navbar-menu {
+    list-style-type: none; /* Remove default list styling */
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: center; /* Center the items horizontally */
+}
+
+.navbar-menu li {
+    margin: 0 30px; /* Increase space between items */
+}
+
+.navbar-menu a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Text color */
+    font-weight: bold; /* Make text bold */
+    transition: color 0.3s; /* Smooth color transition */
+    font-family: 'Courier New', Courier, monospace;
+}
+#profile{
+    position: absolute;
+    top: 0%;
+    width: 50px!important;
+    height: auto;
+    border-radius: 50%;
+    left: 100%;
+}
+.navbar-menu a:hover {
+    color: #e5d8af; /* Change color on hover */
+}
+.navbar-menu .login {
+    position: relative;
+    margin-top: -2%;
+    margin-left: 10%; /* Additional space for Login */
+    background-color: #e5d8af;
+    padding: 10px;
+    border-radius: 20px;
+}
+.navbar-menu .login a:hover {
+color :white;
+}
+.view-cart-button:hover {
+    background-color: #d2c9a8; /* Slightly darker on hover */
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+.view-cart-button i {
+    font-size: 24px; /* Icon size */
+}
+
+/* Cart Count Badge */
+.cart-count {
+    position: absolute; /* Positioning */
+    top: -5px; /* Move it slightly up */
+    right: -10px; /* Move it slightly to the right */
+    background-color: red; /* Red background for count */
+    color: white; /* White text */
+    border-radius: 50%; /* Circular shape for badge */
+    padding: 2px 5px; /* Padding */
+    font-size: 12px; /* Font size */
+}
+/*Tipografia responsive*/
+:root{
+    --body-font: 'Open Sans';
+    --h1-font-size: 1.5rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --smaller-font-size: 0.75rem;
+}
+@media screen and (min-width: 768px){
+    :root{
+        --h1-font-size: 2rem;
+        --normal-font-size: 1rem;
+        --smaller-font-size: 0.813rem;
+    }
+}
+
+/*-- BASE --*/
+*,::after,::before{
+    box-sizing: border-box;
+}
+body{
+    margin: 2rem 0 0 0;
+    background-color: #fff;
+    color: var(--dark-color);
+    font-family: var(--body-font);
+}
+h1{
+    font-size: var(--h1-font-size);
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+}
+
+/*-- LAYAOUT --*/
+.main {
+    padding: 2rem 0;
+}
+.bd-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    max-width: 1200px;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    align-items: center;
+    gap: 2rem;
+}
+
+/*-- PAGES --*/
+.title-shop{
+    position: relative;
+    margin: 0 2.5rem;
+}
+.title-shop::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 72px;
+    height: 2px;
+    background-color: var(--dark-color);
+    margin-left: .25rem;
+}
+
+/*-- COMPONENT --*/
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+article:nth-child(1){
+    background-color: var(--first-color);
+}
+article:nth-child(2){
+    background-color: var(--second-color);
+}
+article:nth-child(3){
+    background-color: var(--third-color);
+}
+article:nth-child(4){
+    background-color: var(--second-color);
+}
+.card__img{
+    width: 180px;
+    height: auto;
+    padding: 3rem 0;
+    transition: .5s;
+}
+.card__name{
+    position: absolute;
+    left: -25%;
+    top: 0;
+    width: 3.5rem;
+    height: 100%;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: center;
+    background-color: var(--dark-color);
+    color: #fff;
+    font-weight: bold;
+    transition: .5s;
+}
+.card__icon{
+    font-size: 1.5rem;
+    color: var(--dark-color);
+}
+.card__icon:hover{
+    color: var(--accent-color);
+}
+.card__precis{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    transition: .5s;
+}
+.card__preci{
+    display: block;
+    text-align: center;
+}
+.card__preci--before{
+    font-size: var(--smaller-font-size);
+    color: var(--accent-color);
+    margin-bottom: .25rem;
+}
+.card__preci--now{
+    font-size: var(--h3-font-size);
+    font-weight: bold;
+}
+/*Move left*/
+.card:hover{
+    box-shadow: 0 .5rem 1rem #D1D9E6;
+}
+.card:hover .card__name{
+    left: 0;
+}
+.card:hover .card__img{
+    transform: rotate(30deg);
+    margin-left: 3.5rem;
+}
+.card:hover .card__precis{
+    margin-left: 3.5rem;
+    padding: 0 1.5rem;
+}
+
+/*-- FOOTER --*/
+
+footer{
+  text-align: center;
+}
+
+/*-- MEDIA QUERIES --*/
+@media screen and (min-width: 1200px){
+    body{
+        margin: 3rem 0 0 0;
+    }
+    .title-shop{
+        margin: 0 5rem;
+    }
+    .bd-grid{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/* Modal styles */
+
+.card{
+    position: relative;
+    top: 40%;
+}
+
+p#logo{
+    position: absolute;
+    top: 3%;
+}
+h1.title-shop{
+    position: absolute;
+    top: 20%;
+    margin-bottom: 50%;
+}
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fff; /* White background */
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 600px; /* Max width for modal */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+/* Close Button for Modal */
+.close {
+    color: #333; /* Dark text color */
+    float: right; /* Position to the right */
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.close:hover,
+.close:focus {
+    color: #e5d8af; /* Change color on hover */
+    text-decoration: none; /* No underline */
+}
+
+/* Modal Heading */
+.modal-content h2 {
+    text-align: center; /* Center the heading */
+    color: #333; /* Dark text color */
+}
+
+/* Table Styles */
+table {
+    width: 100%; /* Full width for the table */
+    border-collapse: collapse; /* Remove spacing between cells */
+}
+
+th, td {
+    text-align: center; /* Center text in cells */
+    padding: 10px; /* Padding in cells */
+}
+
+th {
+    background-color: #e5d8af; /* Header background color */
+    color: #333; /* Header text color */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Zebra stripes for table rows */
+}
+
+tbody tr:hover {
+    background-color: #e5d8af; /* Highlight row on hover */
+}
+
+/* Place Order Button */
+button {
+    background-color: #e5d8af; /* Button background color */
+    color: #333; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for button */
+    cursor: pointer; /* Change cursor to pointer */
+    margin-top: 15px; /* Margin at the top */
+}
+
+button:hover {
+    background-color: #d2c9a8; /* Darker on hover */
+}
+.round-button {
+    display: inline-block;
+    padding: 15px;
+    background-color: #e5d8af; /* Button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 50%; /* Makes the button circular */
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    width: 60px;  /* Width and height to make it perfectly round */
+    height: 60px;
+    line-height: 30px; /* Align icon vertically */
+}
+
+.round-button:hover {
+    background-color: #b8a678; /* Slightly darker shade for hover */
+}
+
+.admin-icon {
+    font-size: 24px; /* Size of the icon */
+    display: block; /* Makes the icon centered */
+    margin: 0 auto; /* Centers the icon */
+}
+
+/* Optional text beside the button */
+.round-button span {
+    margin-left: 10px; /* Space between icon and text */
+    vertical-align: middle; /* Aligns text with the icon */
+}
+#ad{
+    position: absolute;
+    left: -20%;
+    top:5%;
+}
