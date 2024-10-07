@@ -408,3 +408,8 @@ button:hover {
     left: -20%;
     top:5%;
 }
+button.upload-btn{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}

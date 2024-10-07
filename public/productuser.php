@@ -202,7 +202,7 @@ window.onclick = function(event) {
                 </ul>
                 <?php if ($_SESSION['role'] == 'admin') echo '<a id="ad" class="button round-button" href="./dashboard.php"><i class="fas fa-user-shield"></i></a>'; ?>
             </nav>
-            <button class="upload-btn" onclick="openUploadModal()">Upload Images & Description</button>
+            <button class="upload-btn" onclick="openUploadModal()">Customize Your Own Design</button>
     <h1 class="title-shop">SHOP</h1>
     <button class="view-cart-button" onclick="openModal()">
     <i class="fas fa-shopping-cart"></i> <!-- Cart icon -->
@@ -265,6 +265,7 @@ window.onclick = function(event) {
         <span class="close" onclick="closeUploadModal()">&times;</span>
         <h2>Upload Images & Description</h2>
         <form id="uploadForm" method="POST" enctype="multipart/form-data" action="upload_images.php">
+        <input type="hidden" name="product_id" value="<?= $product['id']; ?>"> <!-- Pass the product ID here -->
             <label for="productDescription">Product Description:</label>
             <textarea name="description" id="productDescription" rows="4" placeholder="Enter product description" required></textarea>
 
