@@ -4,6 +4,8 @@ session_start();
 require_once '../config/database.php';
 require_once '../app/controllers/ProductCrud.php';
 
+
+
 // Ensure the user is logged in and has admin privileges
 if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
     die("Access denied. You do not have permission to access this page.");
