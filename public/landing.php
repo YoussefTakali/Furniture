@@ -59,7 +59,7 @@ session_start(); // Start the session
     <section id="about">
         <img src="./images/aboutus.jpg" alt="Description of image" id ='im4'>
         <div id='ab'>
-            <h2>About Us</h2>
+            <h2 id='abus'>About Us</h2>
             <p id="aboutp">
                 Welcome to our furniture store!<br>
                 We specialize in high-quality, stylish pieces that<br> enhance your living space.
