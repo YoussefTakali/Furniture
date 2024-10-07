@@ -9,6 +9,7 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
     die("Access denied. You do not have permission to access this page.");
 }
 
+
 $productCrud = new ProductCrud($pdo, $_SESSION['role']);
 
 // Handle form submission for adding a product
