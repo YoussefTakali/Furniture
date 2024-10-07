@@ -189,6 +189,9 @@ font-size: 70px;
 span{
     font-family: 'Montserrat', sans-serif;
 }
+#abus{
+    font-family: 'Courier New', Courier, monospace;
+}
 h6{
     position: absolute;
     top: 55%;
