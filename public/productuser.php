@@ -1,9 +1,7 @@
 <?php
 session_start();
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-ini_set('log_errors', 1);
-ini_set('error_log', 'error.log'); // Log errors to a file
+error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING);
+
 
 // Ensure the user is logged in
 
@@ -200,7 +198,7 @@ window.onclick = function(event) {
                         </a>
                     </li>
                 </ul>
-                <?php if ($_SESSION['role'] == 'admin') echo '<a id="ad" class="button round-button" href="./dashboard.php"><i class="fas fa-user-shield"></i></a>'; ?>
+                <?php if ($_SESSION['role'] == 'admin'){ echo '<a id="ad" class="button round-button" href="./dashboard.php"><i class="fas fa-user-shield"></i></a>';} ?>
             </nav>
             <button class="upload-btn" onclick="openUploadModal()">Customize Your Own Design</button>
     <h1 class="title-shop">SHOP</h1>
